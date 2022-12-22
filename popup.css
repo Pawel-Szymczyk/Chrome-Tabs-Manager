@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poiret+One&display=swap');
+
+body {
+    width: 20rem;
+  }
+
+.content, .content-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius: 6px;
+  padding: 1em;
+}
+
+.content-body {
+  gap: 10px;
+}
+
+button {
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  /* box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px, rgb(27 31 35 / 15%) 0px 0px 0px 1px; */
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  border: none;
+}
+
+button:hover {
+  color: #000;
+  background-color: #f5ce85;
+  border: none;
+}
+
+button, input, p, h2 {
+  font-family: "Montserrat";
+}
+
+
+img {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-group {
+  box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 1px, rgb(209 213 219) 0px 0px 0px 1px inset;
+  border-radius: 6px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+/* toggle */
+input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 30px;
+  background: #f78f8f;
+  display: block;
+  border-radius: 20px;
+  position: relative;
+  margin-right: 10px;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: #bae0bd;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/*   
+  ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin: 1rem 0;
+  }
+  
+  li {
+    padding: 0.25rem;
+  }
+  li:nth-child(odd) {
+    background: #80808030;
+  }
+  li:nth-child(even) {
+    background: #ffffff;
+  }
+  
+  h3,
+  p {
+    margin: 0;
+  } */

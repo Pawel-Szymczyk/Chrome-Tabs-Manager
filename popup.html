@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chrome tabs manager</title>
+    <link rel="stylesheet" href="./popup.css" />
+</head>
+<body>
+    <div class="content">
+        <div class="content-header">
+            <div style="display: flex;gap: 10px;align-items: center;justify-content: flex-start;">
+                <img src="images/logo-32.png" alt="chrome-tabs-manager-logo"/>
+                <h2 class="title">chrome tabs manager</h2>
+            </div>
+            <div>
+                <p>safely manage your favourite browser tabs</p>
+            </div>
+        </div>
+        <div class="content-body">
+            <div class="btn-group">
+            
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <p style="flex-basis: 114px;">open tabs in the browser</p>
+                    <input type="checkbox" id="switch" /><label for="switch">toggle</label>
+                    <p style="flex-basis: 114px;">open tabs in a new browser</p>
+                </div>
+                
+                <div class="tabs-input">
+                    <input type="file" id="fileForUpload" />
+                </div>
+            </div>
+            
+            <div class="btn-group">
+                <button id="save-window-tabs">save active browser tabs</button>
+                <button id="save-tabs">save all browser tabs</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./popup.js" type="module"></script>
+</body>
+</html>
